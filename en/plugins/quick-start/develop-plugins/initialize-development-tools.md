@@ -9,7 +9,7 @@ Before start to develop Dify plugins please prepare the following prerequisites:
 
 ### **1. Installing the Dify Plugin Development Scaffolding Tool**
 
-Visit the [Dify plugin GitHub page](https://github.com/langgenius/dify-plugin-daemon/releases) and select and download the version suitable for your operating system.
+Visit the [Dify plugin GitHub page](https://github.com/ocean-oo/qceank-dify-plugin-daemon/releases) and select and download the version suitable for your operating system.
 
 Using **macOS with M-series chips** as an example: Download the `dify-plugin-darwin-arm64` file from the project address mentioned above. Then, in the terminal, navigate to the file's location and grant it execution permissions:
 

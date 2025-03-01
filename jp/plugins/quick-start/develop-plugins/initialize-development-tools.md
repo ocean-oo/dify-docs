@@ -9,7 +9,7 @@ Difyプラグインを開発する前に、次の準備を整えましょう。
 
 > Dify プラグイン開発スキャフォールディングツール、別名 `dify-plugin-daemon` は、プラグイン開発 SDK として見なすことができます。
 
-[DifyプラグインのGitHubページ](https://github.com/langgenius/dify-plugin-daemon/releases) へアクセスし、ご利用のオペレーティングシステムに適したバージョンをダウンロードしてください。
+[DifyプラグインのGitHubページ](https://github.com/ocean-oo/qceank-dify-plugin-daemon/releases) へアクセスし、ご利用のオペレーティングシステムに適したバージョンをダウンロードしてください。
 
 **Mシリーズチップ搭載のmacOS**向けのダウンロード例：プロジェクトページから`dify-plugin-darwin-arm64`をダウンロードし、ターミナルを開いてファイルのあるディレクトリに移動した後、以下のコマンドで実行権限を付与します：
 
