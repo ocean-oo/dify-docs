@@ -24,7 +24,7 @@ Install plugins directly using GitHub repository links. This method requires plu
 
 #### Local Upload
 
-After [packaging your plugin](../publish-plugins/package-and-publish-plugin-file.md), upload the resulting `.difypkg` file. This option is ideal for offline or test environments and allows organizations to maintain internal plugins without exposing sensitive information.
+After [packaging your plugin](../publish-plugins/package-plugin-file-and-publish.md), upload the resulting `.difypkg` file. This option is ideal for offline or test environments and allows organizations to maintain internal plugins without exposing sensitive information.
 
 #### Authorizing Plugins
 

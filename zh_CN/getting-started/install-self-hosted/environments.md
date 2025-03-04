@@ -154,37 +154,37 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 *   CELERY\_BROKER\_URL
 
-    格式如下（直连模式）
+    格式如下（直连模式）：
 
-    <pre><code><strong>redis://<redis_username>:<redis_password>@<redis_host>:<redis_port>/<redis_database>
-    </strong><strong>  
-    </strong></code></pre>
+    ```
+    redis://<redis_username>:<redis_password>@<redis_host>:<redis_port>/<redis_database>
+  ```
 
     范例：`redis://:difyai123456@redis:6379/1`
 
-    哨兵模式
+    哨兵模式：
 
-    <pre><code><strong>sentinel://<sentinel_username>:<sentinel_password>@<sentinel_host>:<sentinel_port>/<redis_database>
-    </strong><strong>  
-    </strong></code></pre>
+    ```
+      sentinel://<sentinel_username>:<sentinel_password>@<sentinel_host>:<sentinel_port>/<redis_database>
+  ```
 
     范例：`sentinel://localhost:26379/1;sentinel://localhost:26380/1;sentinel://localhost:26381/1`
     
 *   BROKER\_USE\_SSL
 
-    若设置为 true，则使用 SSL 协议进行连接，默认 false
+    若设置为 true，则使用 SSL 协议进行连接，默认 false。
 
 *   CELERY\_USE\_SENTINEL
 
-    若设置为 true，则启用哨兵模式，默认 false
+    若设置为 true，则启用哨兵模式，默认 false。
 
 *   CELERY_SENTINEL_MASTER_NAME
 
-    哨兵的服务名，即 Master Name
+    哨兵的服务名，即 Master Name。
 
 *   CELERY_SENTINEL_SOCKET_TIMEOUT
 
-    哨兵连接超时时间，默认值：0.1，单位：秒
+    哨兵连接超时时间，默认值：0.1，单位：秒。
 
 #### CORS 配置
 
@@ -237,19 +237,19 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 * ALIYUN\_OSS\_BUCKET_NAME: your-bucket-name 如 'difyai'
 * ALIYUN\_OSS\_ACCESS_KEY: your-access-key 如 'difyai'
 * ALIYUN\_OSS\_SECRET_KEY: your-secret-key 如 'difyai'
-* ALIYUN\_OSS\_ENDPOINT: https://oss-ap-southeast-1-internal.aliyuncs.com # 参考文档: https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints
-* ALIYUN\_OSS\_REGION: ap-southeast-1 # 参考文档: https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints
+* ALIYUN\_OSS\_ENDPOINT: https://oss-ap-southeast-1-internal.aliyuncs.com # 参考[文档](https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints)
+* ALIYUN\_OSS\_REGION: ap-southeast-1 # 参考[文档](https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints)
 * ALIYUN\_OSS\_AUTH_VERSION: v4
-* ALIYUN\_OSS\_PATH: your-path # 路径不要使用斜线 "/" 开头，阿里云 OSS 不支持。参考文档: https://api.aliyun.com/troubleshoot?q=0016-00000005
+* ALIYUN\_OSS\_PATH: your-path # 路径不要使用斜线 "/" 开头，阿里云 OSS 不支持。参考[文档](https://api.aliyun.com/troubleshoot?q=0016-00000005)
 * HUAWEI\_OBS\_BUCKET\_NAME: your-bucket-name 如 'difyai'
 * HUAWEI\_OBS\_SECRET\_KEY: your-secret-key 如 'difyai'
 * HUAWEI\_OBS\_ACCESS\_KEY: your-access-key 如 'difyai'
-* HUAWEI\_OBS\_SERVER: your-server-url # 参考文档: https://support.huaweicloud.com/sdk-python-devg-obs/obs_22_0500.html
-* VOLCENGINE_TOS_BUCKET_NAME: your-bucket-name 如 'difyai'
-* VOLCENGINE_TOS_SECRET_KEY: your-secret-key 如 'difyai'
-* VOLCENGINE_TOS_ACCESS_KEY: your-access-key 如 'difyai'
-* VOLCENGINE_TOS_REGION: your-region 如 'cn-guangzhou' # 参考文档: https://www.volcengine.com/docs/6349/107356
-* VOLCENGINE_TOS_ENDPOINT: your-endpoint 如 'tos-cn-guangzhou.volces.com' # 参考文档: https://www.volcengine.com/docs/6349/107356
+* HUAWEI\_OBS\_SERVER: your-server-url # 参考[文档](https://support.huaweicloud.com/sdk-python-devg-obs/obs_22_0500.html)。
+* VOLCENGINE_TOS_BUCKET_NAME: your-bucket-name 如 'difyai'。
+* VOLCENGINE_TOS_SECRET_KEY: your-secret-key 如 'difyai'。
+* VOLCENGINE_TOS_ACCESS_KEY: your-access-key 如 'difyai'。
+* VOLCENGINE_TOS_REGION: your-region 如 'cn-guangzhou' # 参考[文档]( https://www.volcengine.com/docs/6349/107356)。
+* VOLCENGINE_TOS_ENDPOINT: your-endpoint 如 'tos-cn-guangzhou.volces.com' # 参考[文档](https://www.volcengine.com/docs/6349/107356)。
 
 #### 向量数据库配置
 
@@ -274,7 +274,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     连接 Weaviate 使用的 api-key 凭据。
 *   WEAVIATE\_BATCH\_SIZE
 
-    Weaviate 批量创建索引 Object 的数量，默认 100。可参考此文档：https://weaviate.io/developers/weaviate/manage-data/import#how-to-set-batch-parameters
+    Weaviate 批量创建索引 Object 的数量，默认 100。可参考此[文档](https://weaviate.io/developers/weaviate/manage-data/import#how-to-set-batch-parameters)。
 *   WEAVIATE\_GRPC\_ENABLED
 
     是否使用 gRPC 方式与 Weaviate 进行交互，开启后性能会大大增加，本地可能无法使用，默认为 true。
@@ -371,23 +371,23 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 -   COUCHBASE_CONNECTION_STRING
 
-    Couchbase 集群的连接 string 字符串
+    Couchbase 集群的连接 string 字符串。
 
 -   COUCHBASE_USER
 
-    数据库用户名
+    数据库用户名。
 
 -   COUCHBASE_PASSWORD
 
-    数据库密码
+    数据库密码。
 
 -   COUCHBASE_BUCKET_NAME
 
-     Bucket 名称
+     Bucket 名称。
 
 -   COUCHBASE_SCOPE_NAME
 
-     Scope 名称
+     Scope 名称。
 
 #### 知识库配置
 

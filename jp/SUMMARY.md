@@ -186,6 +186,7 @@
     * [プラグインのプライバシー保護に関するガイドライン](plugins/publish-plugins/publish-to-dify-marketplace/plugin-privacy-protection-guidelines.md)
   * [個人GitHubリポジトリへの公開](plugins/publish-plugins/publish-plugin-on-personal-github-repo.md)
   * [ローカルでの公開と共有](plugins/publish-plugins/package-plugin-file-and-publish.md)
+* [よくある質問](plugins/faq.md)
 
 ## 開発 <a href="#development" id="development"></a>
 
@@ -202,6 +203,8 @@
   * [LiteLLM Proxyを使用してモデルを統合する](development/models-integration/litellm.md)
   * [GPUStackとの統合によるローカルモデルのデプロイ](development/models-integration/gpustack.md)
   * [AWS Bedrock上のモデル（DeepSeek）の接続](development/models-integration/aws-bedrock-deepseek.md)
+* [移行](development/migration/README.md)
+  * [コミュニティ版を v1.0.0 に移行する](development/migration/migrate-to-v1.md)
 
 ## もっと読む <a href="#learn-more" id="learn-more"></a>
 

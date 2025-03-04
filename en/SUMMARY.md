@@ -187,6 +187,7 @@
     * [Plugin Privacy Protection Guidelines](plugins/publish-plugins/publish-to-dify-marketplace/plugin-privacy-protection-guidelines.md)
   * [Publish to Your Personal GitHub Repository](plugins/publish-plugins/publish-plugin-on-personal-github-repo.md)
   * [Package the Plugin File and Publish it](plugins/publish-plugins/package-plugin-file-and-publish.md)
+* [FAQ](plugins/faq.md)
 
 ## Development
 
@@ -203,6 +204,9 @@
   * [Integrate Models on LiteLLM Proxy](development/models-integration/litellm.md)
   * [Integrating with GPUStack for Local Model Deployment](development/models-integration/gpustack.md)
   * [Integrating AWS Bedrock Models (DeepSeek)](development/models-integration/aws-bedrock-deepseek.md)
+* [Migration](development/migration/README.md)
+  * [Migrating Community Edition to v1.0.0](development/migration/migrate-to-v1.md)
+
 
 ## Learn More
 

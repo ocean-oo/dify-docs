@@ -187,6 +187,7 @@
     * [插件隐私政策准则](plugins/publish-plugins/publish-to-dify-marketplace/plugin-privacy-protection-guidelines.md)
   * [发布至个人 GitHub 仓库](plugins/publish-plugins/publish-plugin-on-personal-github-repo.md)
   * [本地发布与分享](plugins/publish-plugins/package-plugin-file-and-publish.md)
+* [常见问题](plugins/faq.md)
 
 ## 研发 <a href="#development" id="development"></a>
 
@@ -203,6 +204,8 @@
   * [接入 LiteLLM 代理的模型](development/models-integration/litellm.md)
   * [接入 GPUStack 进行本地模型部署](development/models-integration/gpustack.md)
   * [接入 AWS Bedrock 上的模型（DeepSeek）](development/models-integration/aws-bedrock-deepseek.md)
+* [迁移](development/migration/README.md)
+  * [将社区版迁移至 v1.0.0](development/migration/migrate-to-v1.md)
 
 ## 阅读更多 <a href="#learn-more" id="learn-more"></a>
 
