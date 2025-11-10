@@ -65,4 +65,4 @@ OpenAIを例にとると、複数のモデルタイプをサポートしてい�
 
 1.  [モデルプロバイダーの作成](create-model-providers.md)
 2.  [事前定義済み](../../../guides/model-configuration/predefined-model.md)モデル、または[カスタム](../../../guides/model-configuration/customizable-model.md)モデルの統合
-3.  [モデルプラグインのデバッグ](debug-plugin.md)
+3.  [モデルプラグインのデバッグ](../../debug-plugin.md)

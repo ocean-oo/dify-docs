@@ -65,4 +65,4 @@ Please follow these steps to create a model plugin, click the document titles fo
 
 1. [Create Model Provider](create-model-providers.md)
 2. Integrate [Predefined](../../../guides/model-configuration/predefined-model.md)/[Custom](../../../guides/model-configuration/customizable-model.md) Models
-3. [Debug Plugin](../debug-plugin.md)
+3. [Debug Plugin](../../debug-plugin.md)

@@ -56,7 +56,7 @@ git remote add origin https://github.com/<your-username>/<repository-name>.git
 
 ### 4. 上传插件文件
 
-> 推送插件项目前，请确保插件的 `manifest.yaml` 文件中的 author 字段与 GitHub id 保持一致。
+> 打包插件前，请确保插件的 `manifest.yaml` 文件和 `/provider` 路径下的 `.yaml` 文件中的 author 字段与 GitHub ID 保持一致。
 
 将插件项目推送到 GitHub 仓库：
 

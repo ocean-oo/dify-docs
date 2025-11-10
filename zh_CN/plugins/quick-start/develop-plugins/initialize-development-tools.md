@@ -9,7 +9,7 @@
 
 ### **1. 安装 Dify 插件开发脚手架工具**
 
-访问 [Dify Plugin CLI](https://github.com/ocean-oo/qceank-dify-plugins-daemon/releases) 项目地址，下载并安装最新版本号和对应操作系统的工具。
+访问 [Dify Plugin CLI](https://github.com/ocean-oo/qceank-dify-plugin-daemon/releases) 项目地址，下载并安装最新版本号和对应操作系统的工具。
 
 本文**以装载 M 系列芯片的 macOS** 为例。下载 `dify-plugin-darwin-arm64` 文件后，赋予其执行权限。
 

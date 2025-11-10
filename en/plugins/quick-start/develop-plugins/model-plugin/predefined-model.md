@@ -233,8 +233,8 @@ pricing:
 
 Dify provides remote debugging method, go to "Plugin Management" page to get the debugging key and remote server address. Check here for more details:
 
-{% content-ref url="../debug-plugin.md" %}
-[debug-plugin.md](../debug-plugin.md)
+{% content-ref url="../../debug-plugin.md" %}
+[debug-plugin.md](../../debug-plugin.md)
 {% endcontent-ref %}
 
 ### Publishing Plugins

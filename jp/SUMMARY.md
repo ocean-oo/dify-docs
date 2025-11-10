@@ -158,12 +158,12 @@
       * [モデルプロバイダーの構築](plugins/quick-start/develop-plugins/model-plugin/create-model-providers.md)
       * [定義済みモデルの組み込み](plugins/quick-start/develop-plugins/model-plugin/integrate-the-predefined-model.md)
       * [カスタムモデルの組み込み](plugins/quick-start/develop-plugins/model-plugin/customizable-model.md)
-      * [プラグインのデバッグ方法](plugins/quick-start/develop-plugins/model-plugin/debug-plugin.md)
     * [エージェント戦略プラグイン](plugins/quick-start/develop-plugins/agent-strategy-plugin.md)
     * [拡張機能型プラグイン](plugins/quick-start/develop-plugins/extension-plugin.md)
     * [バンドル](plugins/quick-start/develop-plugins/bundle.md)
+  * [プラグインのデバッグ方法](plugins/quick-start/debug-plugin.md)
 * [プラグイン管理方法](plugins/manage-plugins.md)
-* [スキーマ定義](plugins/schema-definition/README.md)
+* [スキーマ仕様](plugins/schema-definition/README.md)
   * [Manifest(マニフェスト)](plugins/schema-definition/manifest.md)
   * [Endpoint(エンドポイント)](plugins/schema-definition/endpoint.md)
   * [Tool(ツール)](plugins/schema-definition/tool.md)
@@ -179,13 +179,14 @@
     * [ツール](plugins/schema-definition/reverse-invocation-of-the-dify-service/tool.md)
     * [ノード](plugins/schema-definition/reverse-invocation-of-the-dify-service/node.md)
 * [ベストプラクティス](plugins/best-practice/README.md)
-  * [Slack Bot プラグインの開発](plugins/best-practice/slack-bot-puraguinno.md)
+  * [Slack Bot プラグインの開発](plugins/best-practice/develop-a-slack-bot-plugin.md)
 * [プラグインの公開](plugins/publish-plugins/README.md)
   * [Difyマーケットプレイスへの公開](plugins/publish-plugins/publish-to-dify-marketplace/README.md)
     * [プラグイン開発者ガイドライン](plugins/publish-plugins/publish-to-dify-marketplace/plugin-developer-guidelines.md)
     * [プラグインのプライバシー保護に関するガイドライン](plugins/publish-plugins/publish-to-dify-marketplace/plugin-privacy-protection-guidelines.md)
   * [個人GitHubリポジトリへの公開](plugins/publish-plugins/publish-plugin-on-personal-github-repo.md)
   * [ローカルでの公開と共有](plugins/publish-plugins/package-plugin-file-and-publish.md)
+* [よくある質問](plugins/faq.md)
 
 ## 開発 <a href="#development" id="development"></a>
 
@@ -202,6 +203,8 @@
   * [LiteLLM Proxyを使用してモデルを統合する](development/models-integration/litellm.md)
   * [GPUStackとの統合によるローカルモデルのデプロイ](development/models-integration/gpustack.md)
   * [AWS Bedrock上のモデル（DeepSeek）の接続](development/models-integration/aws-bedrock-deepseek.md)
+* [移行](development/migration/README.md)
+  * [コミュニティ版を v1.0.0 に移行する](development/migration/migrate-to-v1.md)
 
 ## もっと読む <a href="#learn-more" id="learn-more"></a>
 
@@ -215,6 +218,7 @@
   * [DifyチャットボットをWixサイトに統合する方法](learn-more/use-cases/how-to-integrate-dify-chatbot-to-your-wix-website.md)
   * [AWS Bedrockのナレッジベースに統合する方法](learn-more/use-cases/how-to-connect-aws-bedrock.md)
   * [Difyで大規模言語モデルの「競技場」を体験する方法：DeepSeek R1 VS o1 を例に](learn-more/use-cases/dify-model-arena.md)
+  * [Difyスケジューラーの構築](learn-more/use-cases/dify-schedule.md)
 * [さらに読む](learn-more/extended-reading/README.md)
   * [LLMOpsとは何ですか？](learn-more/extended-reading/what-is-llmops.md)
   * [配列変数とは何ですか？](learn-more/extended-reading/what-is-array-variable.md)

@@ -8,25 +8,27 @@ Dify, an open-source AI application development platform, offers a complete priv
 
 ### Advantages of Private Deployment:
 
-- **Superior Performance**: Delivers a conversational experience comparable to commercial models.
-- **Isolated Environment**: Runs entirely offline, eliminating data leakage risks.
-- **Full Data Control**: Retains complete ownership of data assets, ensuring compliance.
+* **Superior Performance**: Delivers a conversational experience comparable to commercial models.
+* **Isolated Environment**: Runs entirely offline, eliminating data leakage risks.
+* **Full Data Control**: Retains complete ownership of data assets, ensuring compliance.
 
----
+***
 
 ## Prerequisites
 
 ### **Hardware Requirements:**
-- **CPU**: ≥ 2 Cores
-- **RAM/GPU Memory**: ≥ 16 GiB (Recommended)
+
+* **CPU**: ≥ 2 Cores
+* **RAM/GPU Memory**: ≥ 16 GiB (Recommended)
 
 ### **Software Requirements:**
-- [Docker](https://www.docker.com/)
-- Docker Compose
-- [Ollama](https://ollama.com/)
-- [Dify Community Edition](https://github.com/langgenius/dify)
 
----
+* [Docker](https://www.docker.com/)
+* Docker Compose
+* [Ollama](https://ollama.com/)
+* [Dify Community Edition](https://github.com/langgenius/dify)
+
+***
 
 ## Deployment Steps
 
@@ -74,10 +76,13 @@ Go to **Profile → Settings → Model Providers** in the Dify platform. Select 
 
 > Note: The “DeepSeek” option in Model Providers refers to the online API service, whereas the Ollama option is used for a locally deployed DeepSeek model.
 
-Configure the Model:
-•	Model Name: Enter the deployed model name, e.g., `deepseek-r1:7b`.
-•	Base URL: Set the Ollama client’s local service URL, typically `http://your_server_ip:11434`. If you encounter connection issues, please refer to the [FAQ](https://docs.dify.ai/learn-more/use-cases/private-ai-ollama-deepseek-dify#id-1.-connection-errors-when-using-docker).
-•	Other settings: Keep default values. According to the [DeepSeek model specifications](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B), the max token length is 32,768.
+Configure the Model:&#x20;
+
+• **Model Name**: Enter the deployed model name, e.g., `deepseek-r1:7b`.&#x20;
+
+• **Base URL**: Set the Ollama client’s local service URL, typically `http://your_server_ip:11434`. If you encounter connection issues, please refer to the [FAQ](https://docs.dify.ai/learn-more/use-cases/private-ai-ollama-deepseek-dify#id-1.-connection-errors-when-using-docker).&#x20;
+
+• **Other settings**: Keep default values. According to the [DeepSeek model specifications](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B), the max token length is 32,768.
 
 ![](https://assets-docs.dify.ai/2025/01/6f3b53427e46786ba7d1374739344142.png)
 
@@ -103,17 +108,16 @@ Configure the Model:
 
 > Chatflow / Workflow applications enable the creation of more complex AI solutions, such as document recognition, image processing, and speech recognition. For more details, please check the [Workflow Documentation](https://docs.dify.ai/guides/workflow).
 
-1.	Click Create Blank App, then select Chatflow or Workflow, and name the application.
+1. Click Create Blank App, then select Chatflow or Workflow, and name the application.
 
 ![](https://assets-docs.dify.ai/2025/01/cb8637be4dca5a0e684fd9a21df3711f.png)
 
-2.	Add an LLM Node, select the `deepseek-r1:7b` model under Ollama, and use the `{{#sys.query#}}` variable into the system prompt to connect to the initial node. If you encounter any API issues, you can handle them via [Load Balancing](https://docs.dify.ai/guides/model-configuration/load-balancing) or the [Error Handling](https://docs.dify.ai/guides/workflow/error-handling) node.
-
-3.	Add an LLM node, select the deepseek-r1:7b model under the Ollama framework, and insert the {{#sys.query#}} variable into the system prompt to connect to the initial node. If you encounter any API issues, you can handle them via Load Balancing or the Error Handling node.
+2. Add an LLM Node, select the `deepseek-r1:7b` model under Ollama, and use the `{{#sys.query#}}` variable into the system prompt to connect to the initial node. If you encounter any API issues, you can handle them via [Load Balancing](https://docs.dify.ai/guides/model-configuration/load-balancing) or the [Error Handling](https://docs.dify.ai/guides/workflow/error-handling) node.
+3. Add an LLM node, select the deepseek-r1:7b model under the Ollama framework, and insert the \{{#sys.query#\}} variable into the system prompt to connect to the initial node. If you encounter any API issues, you can handle them via Load Balancing or the Error Handling node.
 
 ![](https://assets-docs.dify.ai/2025/01/c21f076398eb09d773d3e543561293e6.png)
 
-4.	Add an End Node to complete the configuration. Test the workflow by entering a query. If the response is correct, the setup is complete.
+4. Add an End Node to complete the configuration. Test the workflow by entering a query. If the response is correct, the setup is complete.
 
 ![](https://assets-docs.dify.ai/2025/01/820c37c70cb029cba60ca289e8d6e89a.png)
 
@@ -135,7 +139,7 @@ Ollama is not accessible inside the Docker container because localhost refers to
 
 **Solution**:
 
-**Setting environment variables on Mac**: 
+**Setting environment variables on Mac**:
 
 If Ollama is run as a macOS application, environment variables should be set using `launchctl`:
 
@@ -145,7 +149,6 @@ If Ollama is run as a macOS application, environment variables should be set usi
     launchctl setenv OLLAMA_HOST "0.0.0.0"
     ```
 2. Restart Ollama application.
-
 3.  If the above steps are ineffective, you can use the following method:
 
     The issue lies within Docker itself, and to access the Docker host. You should connect to `host.docker.internal`. Therefore, replacing `localhost` with `host.docker.internal` in the service will make it work effectively.
@@ -154,7 +157,7 @@ If Ollama is run as a macOS application, environment variables should be set usi
     http://host.docker.internal:11434
     ```
 
-**Setting environment variables on Linux**: 
+**Setting environment variables on Linux**:
 
 If Ollama is run as a systemd service, environment variables should be set using `systemctl`:
 

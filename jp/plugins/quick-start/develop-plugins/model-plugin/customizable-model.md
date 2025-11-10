@@ -283,11 +283,13 @@ def validate_credentials(self, model: str, credentials: dict) -> None:
 
 Runtime Errors:
 
-* `InvokeConnectionError`  呼び出し接続エラー
-* `InvokeServerUnavailableError`  呼び出しサービスが利用不可
-* `InvokeRateLimitError` 呼び出しが制限に達した
-* `InvokeAuthorizationError` 呼び出し認証失敗
-* `InvokeBadRequestError` 呼び出しパラメータエラー
+```
+• `InvokeConnectionError`  呼び出し接続エラー
+• `InvokeServerUnavailableError`  呼び出しサービスが利用不可
+• `InvokeRateLimitError` 呼び出しが制限に達した
+• `InvokeAuthorizationError` 呼び出し認証失敗
+• `InvokeBadRequestError` 呼び出しパラメータエラー
+```
 
 ```python
 @property
@@ -310,13 +312,13 @@ def _invoke_error_mapping(self) -> dict[type[InvokeError], list[type[Exception]]
 
 プラグインの開発が完了したら、次にプラグインが正常に動作するかどうかをテストする必要があります。詳細については、以下を参照してください。
 
-{% content-ref url="debug-plugin.md" %}
-[debug-plugin.md](debug-plugin.md)
+{% content-ref url="../../debug-plugin.md" %}
+[debug-plugin.md](../../debug-plugin.md)
 {% endcontent-ref %}
 
 ### 4.  プラグインの公開
 
-プラグインをDify Marketplaceに公開する場合は、以下を参照してください。
+プラグインをDify マーケットプレイスに公開する場合は、以下を参照してください。
 
 {% content-ref url="../../../publish-plugins/publish-to-dify-marketplace.md" %}
 [publish-to-dify-marketplace.md](../../../publish-plugins/publish-to-dify-marketplace.md)

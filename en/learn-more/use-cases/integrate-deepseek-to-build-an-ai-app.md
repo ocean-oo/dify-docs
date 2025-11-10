@@ -14,7 +14,7 @@ This guide details DeepSeek API integration with Dify to achieve two core implem
 * **Intelligent Chatbot Development** - Directly harness DeepSeek R1's chain-of-thought reasoning capabilities
 * **Knowledge-Enhanced Application Construction** - Enable accurate information retrieval and generation through private knowledge bases
 
-> For compliance-sensitive industries like finance and legal, Dify offers [**Private Deployment of DeepSeek + Dify: Build Your Own AI Assistant**](broken-reference):
+> For compliance-sensitive industries like finance and legal, Dify offers [**Private Deployment of DeepSeek + Dify: Build Your Own AI Assistant**](./private-ai-ollama-deepseek-dify.md):
 >
 > * Synchronized deployment of DeepSeek models and Dify platform in private networks
 > * Full data sovereignty assurance
@@ -29,7 +29,7 @@ The Dify × DeepSeek integration enables developers to bypass infrastructure com
 
 Visit the [DeepSeek API Platform](https://platform.deepseek.com/) and follow the instructions to request an API Key.
 
-> If the link is inaccessible, consider deploying DeepSeek locally. See the [local deployment guide](broken-reference) for more details.
+> If the link is inaccessible, consider deploying DeepSeek locally. See the [local deployment guide](./private-ai-ollama-deepseek-dify.md) for more details.
 
 ### 2. Register on Dify
 
@@ -97,4 +97,4 @@ Beyond simple chatbot applications, you can also use Chatflow or Workflow to bui
 
 * [Workflow](https://docs.dify.ai/zh-hans/guides/workflow)
 * [File Upload](https://docs.dify.ai/zh-hans/guides/workflow/file-upload)
-* [Deploy DeepSeek + Dify Locally to Build a Private AI Assistant](broken-reference)
+* [Deploy DeepSeek + Dify Locally to Build a Private AI Assistant](./private-ai-ollama-deepseek-dify.md)

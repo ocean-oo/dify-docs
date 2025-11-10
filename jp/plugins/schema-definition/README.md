@@ -1,4 +1,4 @@
-# スキーマ定義
+# スキーマ仕様
 
 {% content-ref url="manifest.md" %}
 [manifest.md](manifest.md)

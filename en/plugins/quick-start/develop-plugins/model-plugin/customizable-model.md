@@ -312,8 +312,8 @@ To view the complete code files discussed in this guide, visit the [GitHub Repos
 
 After finishing development, test the plugin to ensure it runs correctly. For more details, refer to:
 
-{% content-ref url="../debug-plugin.md" %}
-[debug-plugin.md](../debug-plugin.md)
+{% content-ref url="../../debug-plugin.md" %}
+[debug-plugin.md](../../debug-plugin.md)
 {% endcontent-ref %}
 
 ### 4. Publish the Plugin
